@@ -148,11 +148,13 @@ p {
 .main-header i {
     margin-top: 2.5rem;
 }
+/* End of Header CSS */
 
 /* Main Containers CSS */
 .summary,
 .social,
-.technological-skills-block{
+.technological-skills-block,
+.projects{
     padding: 3em 1em;
     text-align: center;
 }
@@ -280,6 +282,58 @@ p {
     grid-area: 7 / 3 / 8 / 5;
 }
 /* End of Technological Skills CSS */
+
+/* Project CSS */
+.projects-content {
+    text-align: left;
+}
+
+.projects h2 {
+    text-transform: capitalize;
+}
+
+.projects hr {
+    margin: 1em 0;
+}
+
+.projects-item {
+    border-radius: 50%; /* ------ COME BACK TO THIS ---- */
+    margin: 1rem auto;
+}
+
+.project-image {
+    position: relative;
+}
+
+.projects img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.project-image-overlay {
+    background: rgba(0, 0, 0, .5) url('/Images/eye.png') center center no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.project-image-overlay:hover {
+    opacity: 1;
+}
+
+.project-description {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-right: 1px solid rgba(0,0,0,.1);
+    margin-top: -2rem;
+    padding: 2rem 1rem .5rem 1rem;
+}
+  
+/* End of Project CSS */
 
 /* Links CSS */
 a:link,
@@ -552,7 +606,8 @@ to {
 /* Containers CSS */
 .summary,
 .social,
-.technological-skills-block{
+.technological-skills-block,
+.projects{
     padding: 10% 7%;
 }
 
@@ -600,6 +655,14 @@ to {
 .technological-skills-container p:nth-child(10) {
     grid-area: 4 / 1 / 5 / 3;
 }
+
+ /* Personal Projects CSS */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
 }
 
 @media only screen and (min-width: 750px) {
@@ -610,13 +673,15 @@ to {
 
 /* Container CSS */
 .summary,
-.social-content-container {
+.social-content-container,
+.projects {
     text-align: left;
 }
 
 .summary,
 .social,
-.technological-skills-block{
+.technological-skills-block,
+.projects{
     padding: 10% 9%;
 }
 
@@ -707,13 +772,19 @@ to {
     margin-top: 0;
 }
 /* End of Social CSS */
+
+/* Projects CSS */
+.projects-container {
+    grid-template-columns: repeat(4, 1fr);
+}
 }
 
 @media only screen and (min-width: 1000px) {
 /* Container CSS */
 .summary,
 .social,
-.technological-skills-block{
+.technological-skills-block,
+.projects{
     padding: 6% 10%;
 }
 
@@ -723,7 +794,9 @@ to {
 
 .summary-block,
 .social,
-.technological-skills-block{
+.technological-skills-block,
+.projects-content,
+.projects-container{
     margin: 0 auto;
     max-width: 80%;
 }
@@ -782,7 +855,14 @@ to {
 .technological-skills-container p:nth-child(13) {
     grid-area: 5 / 5 / 6 / 7;
 }
-  /* End of Technology Skills */
+/* End of Technology Skills */
+
+/* Projects CSS */
+.projects-container {
+    grid-gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+}
+/* End of Project CSS */
 }
 
 @media only screen and (orientation: landscape) {
