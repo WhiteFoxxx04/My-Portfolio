@@ -1,0 +1,178 @@
+/* 
+    Images are used from Unsplash.com
+    Fonts are used from Google fonts apis
+    Icons are used from Fontawesome
+*/
+
+/* Universal */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main CSS */
+html, body{
+    background-color: #ffffff;
+    color: #373a3c;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    --main-color: crimson;
+    --secondary-color: #f6f6f6;
+}
+*::selection{
+    background: var(--main-color);
+    color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: .5rem
+}
+
+/* Nav Bar */
+.main-nav{
+    color: rgba(255,255,255,1);
+    transition: color .3s;
+}
+.main-nav li:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: color .3s;
+  }
+  
+.main-header {
+color: #fff;
+}
+
+.main-nav {
+background-color: rgba(21,31,33,0.5);
+border-bottom: 1px solid #dedede;
+display: flex;
+font-weight: 100; /* -------- COME BACK TO THIS ---- */
+justify-content: space-between;
+padding: 15px 25px;
+position: fixed;
+width: 100%;
+text-transform: uppercase;
+top: 0;
+z-index: 1000;
+}
+
+.brand h1 {
+    padding: 10px 5px 5px 10px;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-family: 'Megrim', cursive;
+	color: white;
+    height: auto;
+    max-width: 100%;
+}
+.brand h1 span {
+	color: crimson;
+}
+
+.main-nav ul {
+background-color: rgba(21,31,33,0.5);
+display: none;
+font-size: 1.1em;
+left: 0;
+list-style: none;
+padding: 1em;
+position: absolute;
+top: 70px;
+width: 100%;
+}
+
+.main-nav i {
+cursor: pointer;
+}
+
+#resume-download-button {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Header CSS */
+.main-header {
+background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Images/background.jpg') center center no-repeat;
+background-size: cover;
+height: 100vh;
+min-height: 300px;
+padding: 35vh 1em 0;
+text-align: center;
+}
+
+.main-header img {
+width: 80%;
+}
+
+.main-header h1 {
+text-transform: uppercase;
+}
+
+.main-header p {
+font-size: 1.25rem;
+}
+
+.main-header i {
+margin-top: 2.5rem;
+}
+
+/* Media Query for Landscape */
+@media only screen and (orientation: landscape) {
+.main-header {
+    min-height: 500px;
+    padding-top: 35vh;
+}
+}
+/* Media Query for Mobile */
+@media only screen and (min-width: 600px) {
+.main-container hr {
+    width: 30%;
+}
+
+/* Main Header CSS */
+.main-header {
+    padding: 24em 2em 0;
+}
+
+.main-header-container {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+/* Main Nav */
+.main-nav {
+    padding: 0;
+}
+
+.main-nav i {
+    display: none;
+}
+
+.main-nav img {
+    padding: 13px 0 0 25px;
+}
+
+.main-nav ul {
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    padding: 15px 25px;
+    position: static;
+    width: auto;
+    top: 0;
+}
+
+.main-nav li {
+    margin: 0 1em;
+}
+}
