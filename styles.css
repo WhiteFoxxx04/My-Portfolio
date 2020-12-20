@@ -150,7 +150,8 @@ p {
 }
 
 /* Main Containers CSS */
-.summary{
+.summary,
+.social{
     padding: 3em 1em;
     text-align: center;
 }
@@ -164,6 +165,32 @@ p {
     height: auto;
     margin-top: 2em;
     width: 100%;
+}
+
+/* Social CSS */
+.social-container {
+    color: var(--main-color);
+    display: flex;
+    flex-direction: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: .625rem;
+  }
+  
+.social-container i {
+    border: 2px solid var(--main-color);
+    border-radius: 30%;
+    font-size: 1.6rem;
+    height: 3.75rem;
+    margin: .35rem;
+    padding-top: .9375rem;
+    transition: background-color .5s, color .5s ease-in-out;
+    width: 3.75rem;
+}
+  
+.social-container i:hover {
+    background-color: var(--main-color);
+    color: #fff;
 }
 
 /* Links CSS */
@@ -435,7 +462,8 @@ to {
 }
 
 /* Containers CSS */
-.summary{
+.summary
+.social{
     padding: 10% 7%;
 }
 
@@ -452,7 +480,8 @@ to {
 }
 
 /* Container CSS */
-.summary {
+.summary,
+.social-content-container {
     text-align: left;
 }
 
@@ -460,7 +489,8 @@ to {
     padding: 10% 9%;
 }
 
-.summary hr {
+.summary hr
+.social hr {
     margin: 1em 0;
     width: 50%;
 }
@@ -537,11 +567,21 @@ to {
     height: auto;
     max-width: 90%;
 }
+/* Social CSS */
+.social{
+    display: flex;
+    justify-content: space-between;
+}
+.social-container{
+    margin-top: 0;
+}
+/* End of Social CSS */
 }
 
 @media only screen and (min-width: 1000px) {
 /* Container CSS */
-.summary{
+.summary,
+.social{
     padding: 6% 10%;
 }
 
@@ -549,7 +589,8 @@ to {
     max-width: 1040px;
 }
 
-.summary-block{
+.summary-block,
+.social{
     margin: 0 auto;
     max-width: 80%;
 }
