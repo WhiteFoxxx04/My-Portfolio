@@ -67,20 +67,6 @@ p {
     transition: color .3s;
 }
 
-.brand h1 {
-    padding: 10px 5px 5px 10px;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-family: 'Megrim', cursive;
-    color: white;
-    height: auto;
-    max-width: 100%;
-}
-
-.brand h1 span {
-    color: #25955d;
-}
-
 .main-header {
     color: #fff;
 }
