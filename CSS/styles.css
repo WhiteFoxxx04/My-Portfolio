@@ -843,7 +843,8 @@ to {
 }
 
 .project-summary-image-container,
-.technologies-used-content-container img {
+.technologies-used-content-container img
+{
     flex: 1 50%;
 }
 
